@@ -384,7 +384,7 @@ aside{
     justify-content: center;
     align-items: center;
     width: 100%;
-    max-width: 1400px;
+    max-width: 1200px;
     height: 90%;
     max-height: 1000px;
     opacity: 0;
@@ -416,7 +416,7 @@ aside{
 .lightbox_media video{
     width: 100%;
     height: 95%;
-    object-fit: cover;
+    object-fit:cover;
     object-position: center;
 }
 
