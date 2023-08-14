@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta description="Fisheye est une entreprise de photographes indépendants. Notre communauté de professionnels assure la couverture de tous vos événements privés ou professionnels à Paris mais aussi dans toute la France.">
+    <title>Fisheye - Photographe</title>
+    <!-- CSS -->
+    <link href="./css/reset.css" rel="stylesheet" type="text/css" />
+    <link href="./css/style.css" rel="stylesheet" type="text/css" />
+    <link href="./css/photographer.css" rel="stylesheet" type="text/css" />
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="./assets/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./assets/favicon/favicon-16x16.png">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css?family=DM+Sans&display=swap" rel="stylesheet" />
+    <!-- CDN Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="page">
+        <!-- Header -->
+        <header>
+            <nav role="navigation">
+                <li>
+                    <a href="./index.html">
+                        <img src="assets/images/logo.png" class="logo" alt="Fisheye Home page" title="Home Page" />
+                    </a>
+                </li>
+            </nav>
+        </header>
+        <!-- Main -->
+        <main>
+            <section class="main_about"></section>
+            <section class="main_content">
+                <div class="main_content_filter">
+                    <h2>Trier par</h2>
+                    <div class="filter_section" role="menu">
+                        <div class="dropdown">
+                            <button class="btn_drop" type="button">
+                                <span id="current_filter">Titre</span>
+                                <i class="fa-solid fa-chevron-up"></i>
+                            </button>
+
+                            <ul class="dropdown_content">
+                                <li>
+                                    <button type="button" tabindex="-1">Titre</button>
+                                </li>
+                                <li>
+                                    <button type="button" tabindex="-1">Popularité</button>
+                                </li>
+                                <li>
+                                    <button type="button" tabindex="-1">Date</button>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="main_content_medias"></div>
+            </section>
+        </main>
+        <!-- Modal Form -->
+        <div class="modal_wrapper wrapper">
+            <div class="modal_form">
+                <div class="modal_form_title">
+                    <h2>Contactez-moi <button  class="btn_close" role="close form" aria-label="Close Contact Form"></button></h2>
+                    <p class="modal_form_name"></p>
+                </div> 
+                <form novalidate>
+                    <div class="form_content">
+                        <label for="firstname">Prénom</label>
+                        <input class="formField" type="text" id="firstname" name="firstname" maxlength="15" data-error="Minimum 3 caractères, maximum 15 caractères. Les chiffres et caractères spéciaux différents de - ne sont pas autorisés." required/>
+                        <span></span>
+                    </div>
+                    <div class="form_content">
+                        <label for="lastname">Nom</label>
+                        <input class="formField" type="text" id="lastname" name="lastname" maxlength="15" data-error="Minimum 3 caractères, maximum 15 caractères. Les chiffres et caractères spéciaux différents de - ne sont pas autorisés." required/>
+                        <span></span>
+                    </div>
+                    <div class="form_content">
+                        <label for="email">Email</label>
+                        <input class="formField" type="email" id="email" name="email" maxlength="100" data-error="Veuillez renseigner une adresse mail valide." required/>
+                        <span></span>
+                    </div>
+                    <div class="form_content">
+                        <label for="message">Votre message</label>
+                        <textarea class="formField" id="message" name="message" maxlength="200" data-error="Votre message doit contenir entre 20 et 200 caractères." required></textarea>
+                        <span></span>
+                    </div>
+                    <button class="btn btn_submit" type="submit" aria-label="Send">Envoyer</button>
+                </form>
+            </div>
+        </div>
+        <!-- Lightbox -->
+        <div class="lightbox_wrapper wrapper">
+            <div class="lightbox">
+                <button class="btn_close_lightbox btn_close"></button>
+                <button class="btn_next"></button>
+                <button class="btn_previous"></button>
+                <figure class="lightbox_media"></figure>
+            </div> 
+        </div>
+    </div>
+
+    <!-- Script -->
+    <script src="./scripts/pages/photographerPage.js" type="module"></script>
+</body>
+</html>
