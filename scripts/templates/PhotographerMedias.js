@@ -16,7 +16,7 @@ export default class PhotographerMedias {
                     </video>`;
             return `
                     <article class="gallery_card">                           
-                        <a href="#" class="lightbox-trigger" data-media=${media.id}>
+                        <a href="#" class="lightbox-trigger" data-media=${media.id} role="link" aria-label="Afficher le média en grand">
                             <figure>${mediaContent}</figure>
                         </a>
                         <figcaption>
@@ -24,7 +24,7 @@ export default class PhotographerMedias {
                                 <div>
                                     <span class="nbLike">${media.likes}</span> 
                                     <button class="btn_like" type="button" aria-label="likes" data-id="${media.id}">
-                                        <i class="fas fa-heart"></i>
+                                        <span class="fas fa-heart"></span>
                                     </button> 
                                 </div>
                         </figcaption>
@@ -35,7 +35,7 @@ export default class PhotographerMedias {
             <aside>
                 <p class="photographer_Likes">
                     <span class="photographer_likes_count"></span>
-                    <i class="fas fa-heart"></i>
+                    <span class="fas fa-heart"></span>
                 </p>
                 <span>${this.photographer.price}€ / jour</span>
             </aside>

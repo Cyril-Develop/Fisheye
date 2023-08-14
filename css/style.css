@@ -13,21 +13,17 @@ header {
     height: 50px;
 }
 
-header nav{
+header a{
     position: relative;
-}
-
-header nav a{
-    display: block;
     border-radius: 5px;
     padding: 5px;
 }
 
-header nav a:focus:not(:hover){
+header a:focus:not(:hover){
     outline: 2px solid var(--color-secondary)
 }
 
-header nav::before{
+header a::before{
     content: "";
     z-index: -1;
     position: absolute;
@@ -40,7 +36,7 @@ header nav::before{
     transition: width .2s ease-in-out;
 }
 
-header nav:hover::before{
+header a:hover::before{
     width: 80%;
 }
 

@@ -8,7 +8,7 @@ export const openCloseFilterMenu = () => {
 
     filterMenuButton.addEventListener("click", () => {
         filterMenu.classList.toggle("curtain_effect");
-        document.querySelector(".btn_drop i").classList.toggle("rotate");
+        document.querySelector(".fa-chevron-up").classList.toggle("rotate");
         filterMenu.classList.contains("curtain_effect") ?
             filterButtons.forEach(button => button.setAttribute("tabindex", "0")) :
             filterButtons.forEach(button => button.setAttribute("tabindex", "-1"));

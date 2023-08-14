@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta description="Fisheye est une entreprise de photographes indépendants. Notre communauté de professionnels assure la couverture de tous vos événements privés ou professionnels à Paris mais aussi dans toute la France.">
+    <meta name="description" content="Fisheye est une entreprise de photographes indépendants. Notre communauté de professionnels assure la couverture de tous vos événements privés ou professionnels à Paris mais aussi dans toute la France.">
     <title>Fisheye - Photographe</title>
     <!-- CSS -->
     <link href="./css/reset.css" rel="stylesheet" type="text/css" />
@@ -24,13 +24,10 @@
     <div class="page">
         <!-- Header -->
         <header>
-            <nav role="navigation">
-                <li>
-                    <a href="./index.html">
-                        <img src="assets/images/logo.png" class="logo" alt="Fisheye Home page" title="Home Page" />
-                    </a>
-                </li>
-            </nav>
+            <a href="./index.html">
+                <img src="assets/images/logo.webp" class="logo" alt="Fisheye Home page" aria-label="Retour à la page d'accueil"/>
+            </a>
+            <h1>Nos photographes</h1>
         </header>
         <!-- Main -->
         <main>
@@ -42,7 +39,7 @@
                         <div class="dropdown">
                             <button class="btn_drop" type="button">
                                 <span id="current_filter">Titre</span>
-                                <i class="fa-solid fa-chevron-up"></i>
+                                <span class="fa-solid fa-chevron-up"></span>
                             </button>
 
                             <ul class="dropdown_content">
