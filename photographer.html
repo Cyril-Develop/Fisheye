@@ -25,9 +25,8 @@
         <!-- Header -->
         <header>
             <a href="./index.html">
-                <img src="assets/images/logo.webp" class="logo" alt="Fisheye Home page" aria-label="Retour à la page d'accueil"/>
+                <img src="assets/images/logo.webp" class="logo" alt="Fisheye - logo" aria-label="Retourner à la page d'accueil"/>
             </a>
-            <h1>Nos photographes</h1>
         </header>
         <!-- Main -->
         <main>
@@ -35,21 +34,21 @@
             <section class="main_content">
                 <div class="main_content_filter">
                     <h2>Trier par</h2>
-                    <div class="filter_section" role="menu">
+                    <div class="filter_section" >
                         <div class="dropdown">
-                            <button class="btn_drop" type="button">
+                            <button class="btn_drop" type="button" aria-haspopup="true" aria-expanded="false" aria-controls="filter options">
                                 <span id="current_filter">Titre</span>
-                                <span class="fa-solid fa-chevron-up"></span>
+                                <span class="fa-solid fa-chevron-up" aria-hidden="true"></span>
                             </button>
 
-                            <ul class="dropdown_content">
-                                <li>
+                            <ul class="dropdown_content" aria-hidden="true">
+                                <li role="menu item">
                                     <button type="button" tabindex="-1">Titre</button>
                                 </li>
-                                <li>
+                                <li role="menu item">
                                     <button type="button" tabindex="-1">Popularité</button>
                                 </li>
-                                <li>
+                                <li role="menu item">
                                     <button type="button" tabindex="-1">Date</button>
                                 </li>
                             </ul>
@@ -63,27 +62,27 @@
         <div class="modal_wrapper wrapper">
             <div class="modal_form">
                 <div class="modal_form_title">
-                    <h2>Contactez-moi <button  class="btn_close" role="close form" aria-label="Close Contact Form"></button></h2>
+                    <h2>Contactez-moi <button  class="btn_close" type="button" aria-label="Fermer le formulaire de contact"></button></h2>
                     <p class="modal_form_name"></p>
                 </div> 
                 <form novalidate>
                     <div class="form_content">
-                        <label for="firstname">Prénom</label>
+                        <label for="firstname">Prénom <span aria-hidden="true">*</span></label>
                         <input class="formField" type="text" id="firstname" name="firstname" maxlength="15" data-error="Minimum 3 caractères, maximum 15 caractères. Les chiffres et caractères spéciaux différents de - ne sont pas autorisés." required/>
                         <span></span>
                     </div>
                     <div class="form_content">
-                        <label for="lastname">Nom</label>
+                        <label for="lastname">Nom <span aria-hidden="true">*</span></label>
                         <input class="formField" type="text" id="lastname" name="lastname" maxlength="15" data-error="Minimum 3 caractères, maximum 15 caractères. Les chiffres et caractères spéciaux différents de - ne sont pas autorisés." required/>
                         <span></span>
                     </div>
                     <div class="form_content">
-                        <label for="email">Email</label>
+                        <label for="email">Email <span aria-hidden="true">*</span></label>
                         <input class="formField" type="email" id="email" name="email" maxlength="100" data-error="Veuillez renseigner une adresse mail valide." required/>
                         <span></span>
                     </div>
                     <div class="form_content">
-                        <label for="message">Votre message</label>
+                        <label for="message">Votre message <span aria-hidden="true">*</span></label>
                         <textarea class="formField" id="message" name="message" maxlength="200" data-error="Votre message doit contenir entre 20 et 200 caractères." required></textarea>
                         <span></span>
                     </div>
@@ -94,10 +93,10 @@
         <!-- Lightbox -->
         <div class="lightbox_wrapper wrapper">
             <div class="lightbox">
-                <button class="btn_close_lightbox btn_close"></button>
-                <button class="btn_next"></button>
-                <button class="btn_previous"></button>
-                <figure class="lightbox_media"></figure>
+                <button class="btn_close_lightbox btn_close" aria-label="Fermer la lightbox"></button>
+                <button class="btn_next" aria-label="Media suivant"></button>
+                <button class="btn_previous" aria-label="Media précédent"></button>
+                <figure class="lightbox_media" role="media" aria-label="Media en cours"></figure>
             </div> 
         </div>
     </div>

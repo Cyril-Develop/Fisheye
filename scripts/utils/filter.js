@@ -9,9 +9,13 @@ export const openCloseFilterMenu = () => {
     filterMenuButton.addEventListener("click", () => {
         filterMenu.classList.toggle("curtain_effect");
         document.querySelector(".fa-chevron-up").classList.toggle("rotate");
-        filterMenu.classList.contains("curtain_effect") ?
-            filterButtons.forEach(button => button.setAttribute("tabindex", "0")) :
+        if(filterMenu.classList.contains("curtain_effect")) {
+            filterMenu.setAttribute("aria-hidden", "false");
+            filterButtons.forEach(button => button.setAttribute("tabindex", "0"));
+        } else {
+            filterMenu.setAttribute("aria-hidden", "true");
             filterButtons.forEach(button => button.setAttribute("tabindex", "-1"));
+        }
     });
 };
 
@@ -51,13 +55,13 @@ export const displayMediaWithFilter = mediasTemplate => {
         mediasTemplate.createPhotographerMedias();
         const mediasfiltered = mediasTemplate;
         displayLightbox(mediasfiltered);
+        displayTotalLikes();
  
         const mediaElements = document.querySelectorAll('.gallery_card');
         mediaElements.forEach((media, index) => {
             setTimeout(() => {
                 media.classList.add('animeCard');
             }, 100 * index);
-        });
-        displayTotalLikes();
+        });   
     };
 };

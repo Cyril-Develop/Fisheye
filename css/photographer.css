@@ -1,30 +1,3 @@
-/* UTILITY CLASS */
-.btn{
-    font-size: clamp(1.8rem, 2vw, 2rem);
-    font-weight: bold;
-    color: var(--color-light);
-    padding: 15px;
-    height: 50px;
-    border: none;
-    outline: none;
-    background-color: var(--color-primary);
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-.wrapper{
-    z-index: 10;
-    display: none;
-    justify-content: center;
-    align-items: center;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100vh;
-    background-color: rgba(0,0,0,0.5); 
-}
-
 /* MAIN */
 main{
     padding: 0 120px;
@@ -38,10 +11,6 @@ main{
     padding: 40px;
     margin-top: 20px;
     background-color: var(--color-light-medium);
-}
-
-.btn_cta{
-    outline: none;
 }
 
 .btn_cta:hover,
@@ -90,15 +59,8 @@ main{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    font-size: clamp(2rem, 3vw, 4rem);
     font-weight: normal;
-}
-
-.btn_close {
-    cursor: pointer;
-    border: none;
-    outline: none;
-    background-color: transparent;
+    font-size: clamp(2rem, 3vw, 4rem);
 }
 
 .btn_close:hover::before{
@@ -200,7 +162,6 @@ h2{
 
 .dropdown_content {
     max-height: 0;
-    overflow: hidden;
     background-color: var(--color-primary);
     transition: max-height .1s ease-in-out;
 }
@@ -208,7 +169,6 @@ h2{
 .dropdown_content li {
     position: relative;
     width: 150px;
-    list-style-type: none;
 }
 
 .dropdown_content li::before{
@@ -219,18 +179,15 @@ h2{
     transform: translateX(-50%);
     width: 85%;
     height: 1px;
-    background-color: #fff;
+    background-color: var(--color-light);
 }
 
 .btn_drop,
 .dropdown_content li button{
     height: 50px;
     padding: 15px;
-    border: none;
-    outline: none;
-    cursor: pointer;
     font-size: clamp(1.8rem, 2vw, 2rem);
-    color: #fff;
+    color: var(--color-light);
 }
 
 .btn_drop {
@@ -252,7 +209,7 @@ h2{
 .btn_drop:hover,
 .btn_drop:focus{
     background-color: var(--color-secondary);
-    color: #000;
+    color: var(--color-black);
 }
 
 .curtain_effect {
@@ -285,20 +242,21 @@ h2{
 }
 
 @keyframes fade{
-    to{
-        transform: rotate(1deg);
-    }
+    from{
+        opacity: 0;
+    } to{
+        opacity: 1;
+    }   
 }
 
 .gallery_card a{
-    display: block;
     border-radius: 5px;
     overflow: hidden;
 }
 
 .gallery_card a figure{
     height: 260px;
-    transition: transform .2s ease-in-out;
+    transition: all .2s ease-in-out;
 }
 
 .gallery_card a:hover figure{
@@ -312,8 +270,6 @@ h2{
 .gallery_thumbnail{
     height: 100%;
     width: 100%;
-    object-fit: cover;
-    object-position: center;
     border-radius: 5px;
     will-change: transform;
 }
@@ -341,14 +297,11 @@ h2{
 }
 
 .btn_like{
-    border: none;
-    outline: none;
     border-radius: 5px;
     padding: 0 1px;
     background-color: transparent;
     font-size: clamp(1.8rem, 2vw, 2.2rem);
     color: var(--color-secondary);
-    cursor: pointer;
 }
 
 .btn_like:focus-visible:not(:hover){
@@ -384,9 +337,12 @@ aside{
     justify-content: center;
     align-items: center;
     width: 100%;
-    max-width: 1200px;
+    max-width: 1000px;
     height: 90%;
     max-height: 1000px;
+    background-color: var(--color-light);
+    padding: 25px 60px 0;
+    border-radius: 5px;
     opacity: 0;
     transform: translateY(-150px);
     animation: fadeIn .3s ease-in-out forwards;
@@ -395,39 +351,39 @@ aside{
 .lightbox_media{
     display: flex;
     flex-direction: column;
-    width: 90%;
+    width: 100%;
     height: 100%;
-    overflow: hidden;
-    border-radius: 5px;
 }
 
 .lightbox_media figcaption{
     display: flex;
     align-items: center;
     width: 100%;
-    height: 5%;
-    padding-left: 20px;
-    font-size: clamp(1.8rem, 2vw, 2.2rem);
-    background-color: var(--color-light);
+    height: 50px;
+    font-size: clamp(1.8rem, 2.5vw, 2.5rem);
+    color: var(--color-primary);
 }
 
 .lightbox_media img,
 .lightbox_media video{
     width: 100%;
-    height: 95%;
-    object-fit:cover;
-    object-position: center;
+    height: calc(100% - 50px);
+}
+
+.lightbox_media video:focus{
+    outline: 2px solid var(--color-primary);
 }
 
 .btn_close_lightbox{
     z-index: 100;
     position: absolute;
-    top: 0;
-    right: 0; 
+    top: 25px;
+    right: 5px; 
 }
 
 .btn_close_lightbox::before{
-    font-size: clamp(4rem, 5vw, 5rem);
+    font-size: clamp(3rem, 6vw, 5rem);
+    color: var(--color-primary);
 }
 
 .btn_previous,
@@ -438,26 +394,23 @@ aside{
     border-radius: 5px;
     transform: translateY(-50%);
     padding: 5px;
-    border: none;
-    outline: none;
-    cursor: pointer;
     background-color: transparent;
 }
 
 .btn_next{
-    right: 0;
+    right: 10px;
 }
 
 .btn_previous{
-    left: 0;
+    left: 10px;
 }
 
 .btn_next::before,
 .btn_previous::before{
     font-family:  "Font Awesome 5 Free";
     font-weight: 900;   
-    font-size: clamp(4rem, 5vw, 5rem);
-    color: #fff;
+    font-size: clamp(3rem, 6vw, 5rem);
+    color: var(--color-primary);
 }
 
 .btn_next::before{
@@ -478,7 +431,6 @@ aside{
     color: var(--color-primary);
 }
 
-/* ADDED CLASS IN JS  */
 .invalid{
     outline: 2px solid var(--color-primary);
 }
@@ -490,7 +442,7 @@ aside{
 .btn_next.active::before,
 .btn_previous.active::before,
 .btn_close_lightbox.active::before{
-    color: var(--color-primary);
+    color: var(--color-black);
 }
 
 /* ANIMATION */
@@ -543,11 +495,27 @@ aside{
     }
 
     .lightbox{
-        height: 100%;
+        padding: 10px 10px 0;
     }
 
-    .lightbox_media{
-        width: 100%;
+    .btn_close_lightbox{
+        top: 10px;
+        right: 10px;
+    }
+
+    .lightbox_media figcaption{
+        height: 30px;
+    }
+
+    .lightbox_media img,
+    .lightbox_media video{
+        height: calc(100% - 30px);
+    }
+
+    .btn_next::before,
+    .btn_previous::before,
+    .btn_close_lightbox::before{
+        color: var(--color-light);
     }
 }
 

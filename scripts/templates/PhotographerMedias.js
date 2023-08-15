@@ -21,10 +21,10 @@ export default class PhotographerMedias {
                         </a>
                         <figcaption>
                             <h2>${media.title}</h2>
-                                <div>
+                                <div role="group" aria-label="Bouton J'aime et nombre de likes">
                                     <span class="nbLike">${media.likes}</span> 
-                                    <button class="btn_like" type="button" aria-label="likes" data-id="${media.id}">
-                                        <span class="fas fa-heart"></span>
+                                    <button class="btn_like" type="button" aria-label="J'aime" data-id="${media.id}">
+                                        <span class="fas fa-heart" aria-hidden="true"></span>
                                     </button> 
                                 </div>
                         </figcaption>
@@ -35,7 +35,7 @@ export default class PhotographerMedias {
             <aside>
                 <p class="photographer_Likes">
                     <span class="photographer_likes_count"></span>
-                    <span class="fas fa-heart"></span>
+                    <span class="fas fa-heart" aria-hidden="true"></span>
                 </p>
                 <span>${this.photographer.price}€ / jour</span>
             </aside>

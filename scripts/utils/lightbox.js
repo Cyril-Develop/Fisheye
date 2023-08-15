@@ -31,7 +31,7 @@ export const displayLightbox = medias => {
 
             <figcaption>${currentMedia.title}</figcaption>
         `;
-    }
+    };
     
     const closeLightbox = () => {
         lightboxWrapper.style.display = 'none';

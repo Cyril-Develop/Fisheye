@@ -35,8 +35,15 @@ export const validateForm = () => {
         const errorMessage = input.dataset.error;
         const messageProvider = input.nextElementSibling;
         const isValid = regex.test(input.value);
-    
-        messageProvider.innerHTML = isValid ? "" : errorMessage;
+
+        if(isValid) {
+            messageProvider.innerHTML = "";
+            messageProvider.removeAttribute("role");
+        } else {
+            messageProvider.innerHTML = errorMessage;
+            messageProvider.setAttribute("role", "alert")
+        }
+
         input.classList.toggle('invalid', !isValid);
         input.classList.toggle('valid', isValid);
     };
