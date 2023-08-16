@@ -63,7 +63,8 @@
 			"image": "Fashion_Yellow_Beach.webp",
 			"likes": 62,
 			"date": "2011-12-08",
-			"price": 55
+			"price": 55,
+			"alt" : "Woman wearing yellow overall in front of basketball court"
 		},
 		{
 			"id": 8520927,
@@ -72,7 +73,8 @@
 			"image": "Fashion_Urban_Jungle.webp",
 			"likes": 11,
 			"date": "2011-11-06",
-			"price": 55
+			"price": 55,
+			"alt" : "Woman wearing a green overall posing on a bridge in the middle of the city"
 		},
 		{
 			"id": 9025895,
@@ -81,7 +83,8 @@
 			"image": "Fashion_Pattern_on_Pattern.webp",
 			"likes": 72,
 			"date": "2013-08-12",
-			"price": 55
+			"price": 55,
+			"alt": "Front-facing woman holding red handbag and wearing yellow overall"
 		},
 		{
 			"id": 9275938,
@@ -90,7 +93,8 @@
 			"image": "Event_WeddingGazebo.webp",
 			"likes": 69,
 			"date": "2018-02-22",
-			"price": 55
+			"price": 55,
+			"alt": "A wedding gazebo nestled in the heart of a lush garden"
 		},
 		{
 			"id": 2053494,
@@ -99,7 +103,8 @@
 			"image": "Event_Sparklers.webp",
 			"likes": 2,
 			"date": "2020-05-25",
-			"price": 55
+			"price": 55,
+			"alt": "View of the newlyweds from behind, their figures illuminated by a gentle cascade of twinkling lights."
 		},
 		{
 			"id": 7324238,
@@ -108,7 +113,8 @@
 			"image": "Event_18thAnniversary.webp",
 			"likes": 33,
 			"date": "2019-06-12",
-			"price": 55
+			"price": 55,
+			"alt": "Table set up for the 18th birthday celebration"
 		},
 		{
 			"id": 8328953,
@@ -117,7 +123,8 @@
 			"video": "Art_Wooden_Horse_Sculpture.mp4",
 			"likes": 24,
 			"date": "2011-12-08",
-			"price": 100
+			"price": 100,
+			"alt": "A wooden sculpture depicting a horse, with a majestic tree in the background."
 		  },
 		{
 			"id": 7502053,
@@ -126,7 +133,8 @@
 			"image": "Art_Triangle_Man.webp",
 			"likes": 88,
 			"date": "2007-05-07",
-			"price": 55
+			"price": 55,
+			"alt" : "Painting of a man with a white triangle on the center"
 		},
 		{
 			"id": 8523492,
@@ -135,7 +143,8 @@
 			"image": "Art_Purple_light.webp",
 			"likes": 24,
 			"date": "2018-05-05",
-			"price": 55
+			"price": 55,
+			"alt" : "A tunnel adorned with graffiti tags on its walls, bathed in an eerie purple illumination"
 		},
 		{
 			"id": 75902334,
@@ -144,7 +153,8 @@
 			"image": "Art_Mine.webp",
 			"likes": 75,
 			"date": "2019-11-25",
-			"price": 55
+			"price": 55,
+			"alt" : "A mosaic depicting vibrant red and blue chickens"
 		},
 
 		{
@@ -154,7 +164,8 @@
 			"image": "Sport_2000_with_8.webp",
 			"likes": 52,
 			"date": "2013-02-30",
-			"price": 70
+			"price": 70,
+			"alt" : "Three athletes seen from above doing rowing"
 		},
 		{
 			"id": 92758372,
@@ -163,7 +174,8 @@
 			"image": "Fashion_Wings.webp",
 			"likes": 58,
 			"date": "2018-07-17",
-			"price": 70
+			"price": 70,
+			"alt" : "A man and a woman raise one arm each"
 		},
 		{
 			"id": 32958383,
@@ -172,7 +184,8 @@
 			"image": "Fashion_Melody_Red_on_Stripes.webp",
 			"likes": 11,
 			"date": "2019-08-12",
-			"price": 70
+			"price": 70,
+			"alt" : "A woman elegantly posed, wearing a striking red dress and facing the camera"
 		},
 		{
 			"id": 928587383,
@@ -181,7 +194,8 @@
 			"image": "Event_VentureConference.webp",
 			"likes": 2,
 			"date": "2019-01-02",
-			"price": 70
+			"price": 70,
+			"alt" : "A standing woman delivering a lecture"
 		},
 		{
 			"id": 725639493,
@@ -190,7 +204,8 @@
 			"image": "Event_ProductPitch.webp",
 			"likes": 3,
 			"date": "2019-05-20",
-			"price": 70
+			"price": 70,
+			"alt" : "A standing man presenting a product to a group of seated individuals"
 		},
 		{
 			"id": 23394384,
@@ -199,7 +214,8 @@
 			"image": "Event_KeyboardCheck.webp",
 			"likes": 52,
 			"date": "2019-07-18",
-			"price": 70
+			"price": 70,
+			"alt" : "A musician seated behind her keyboard, amidst the vibrant atmosphere of a bustling music festival"
 		},
 		{
 			"id": 87367293,
@@ -208,7 +224,8 @@
 			"image": "Event_Emcee.webp",
 			"likes": 23,
 			"date": "2018-02-22",
-			"price": 70
+			"price": 70,
+			"alt" : "A female singer on stage, holding a microphone in hand, amidst a lively music festival crowd"
 		},
 		{
 			"id": 593834784,
@@ -217,7 +234,8 @@
 			"image": "Animals_Majesty.webp",
 			"likes": 52,
 			"date": "2017-03-13",
-			"price": 70
+			"price": 70,
+			"alt" : "Majestic deer in nature, lit by a bright sun"
 		},
 		{
 			"id": 83958935,
@@ -226,7 +244,8 @@
 			"video": "Animals_Puppiness.mp4",
 			"likes": 52,
 			"date": "2016-06-12",
-			"price": 70
+			"price": 70,
+			"alt" : "Puppy playing on the sand with his leash by the sea at sunset"
 		},
 		{
 			"id": 394583434,
@@ -235,7 +254,8 @@
 			"video": "Travel_Rock_Mountains.mp4",
 			"likes": 23,
 			"date": "2017-03-18",
-			"price": 45
+			"price": 45,
+			"alt" : "Rocky mountains from the air"
 		},
 		{
 			"id": 343423425,
@@ -244,7 +264,8 @@
 			"image": "Travel_Outdoor_Baths.webp",
 			"likes": 101,
 			"date": "2017-04-03",
-			"price": 45
+			"price": 45,
+			"alt" : "People bathing in a hot spring in nature"
 		},
 		{
 			"id": 73434243,
@@ -253,7 +274,8 @@
 			"image": "Travel_Road_into_Hill.webp",
 			"likes": 99,
 			"date": "2018-04-30",
-			"price": 45
+			"price": 45,
+			"alt" : "Winding hill roads"
 		},
 		{
 			"id": 23425523,
@@ -262,7 +284,8 @@
 			"image": "Travel_Bridge_into_Forest.webp",
 			"likes": 34,
 			"date": "2016-04-05",
-			"price": 45
+			"price": 45,
+			"alt" : "Bridge leading to a dense forest"
 		},
 		{
 			"id": 23134513,
@@ -271,7 +294,8 @@
 			"image": "Travel_Boat_Wanderer.webp",
 			"likes": 23,
 			"date": "2017-03-18",
-			"price": 45
+			"price": 45,
+			"alt" : "Viewed from a wooden boat on a lake, with distant rocky mountains in sight"
 		},
 		{
 			"id": 92352352,
@@ -280,7 +304,8 @@
 			"image": "Portrait_Sunkissed.webp",
 			"likes": 66,
 			"date": "2018-05-24",
-			"price": 45
+			"price": 45,
+			"alt" : "Portrait of a young redhead woman with a radiant smile"
 		},
 		{
 			"id": 34513453,
@@ -289,7 +314,8 @@
 			"image": "Portrait_Shaw.webp",
 			"likes": 52,
 			"date": "2017-04-21",
-			"price": 45
+			"price": 45,
+			"alt" : "Black and white portrait of an afro man"
 		},
 		{
 			"id": 23523533,
@@ -298,7 +324,8 @@
 			"image": "Portrait_Alexandra.webp",
 			"likes": 95,
 			"date": "2018-11-02",
-			"price": 45
+			"price": 45,
+			"alt" : "Black and white portrait of a woman staring intently at the camera"
 		},
 		{
 			"id": 525834234,
@@ -307,7 +334,8 @@
 			"image": "Portrait_AfternoonBreak.webp",
 			"likes": 25,
 			"date": "2019-01-02",
-			"price": 45
+			"price": 45,
+			"alt" : "Black and white portrait of an elderly man with a cigarette in his hand"
 		},
 
 		{
@@ -317,7 +345,8 @@
 			"image": "Travel_Lonesome.webp",
 			"likes": 88,
 			"date": "2019-02-03",
-			"price": 45
+			"price": 45,
+			"alt" : "Silhouette standing on a rock in nature, surrounded by green hills"
 		},
 		{
 			"id": 625025343,
@@ -326,7 +355,8 @@
 			"image": "Travel_HillsideColor.webp",
 			"likes": 85,
 			"date": "2019-04-03",
-			"price": 45
+			"price": 45,
+			"alt" : "A colorful village surrounded by cliffs by the sea"
 		},
 		{
 			"id": 2525345343,
@@ -335,7 +365,8 @@
 			"image": "Portrait_Wednesday.webp",
 			"likes": 34,
 			"date": "2019-04-07",
-			"price": 45
+			"price": 45,
+			"alt" : "Black and white portrait of a little girl, leaning on her elbows making a face"
 		},
 		{
 			"id": 2523434634,
@@ -344,7 +375,8 @@
 			"image": "Portrait_Nora.webp",
 			"likes": 63,
 			"date": "2019-04-07",
-			"price": 45
+			"price": 45,
+			"alt" : "Black woman wearing glasses looking at the camera while leaning on the edge of the red sofa"
 		},
 		{
 			"id": 398847109,
@@ -353,7 +385,8 @@
 			"image": "Portrait_Background.webp",
 			"likes": 55,
 			"date": "2019-06-20",
-			"price": 45
+			"price": 45,
+			"alt" : "Black and white portrait of a woman with her eyes lowered towards the lower-placed camera lens"
 		},
 		{
 			"id": 2534342,
@@ -362,7 +395,8 @@
 			"image": "Event_SeasideWedding.webp",
 			"likes": 25,
 			"date": "2019-06-21",
-			"price": 45
+			"price": 45,
+			"alt" : "Table ready for a seaside wedding"
 		},
 		{
 			"id": 65235234,
@@ -371,7 +405,8 @@
 			"image": "Event_PintoWedding.webp",
 			"likes": 52,
 			"date": "2019-06-25",
-			"price": 45
+			"price": 45,
+			"alt" : "Newlyweds holding each other by the waist face to face surrounded by rock"
 		},
 		{
 			"id": 23523434,
@@ -380,7 +415,8 @@
 			"image": "Event_BenevidesWedding.webp",
 			"likes": 77,
 			"date": "2019-06-28",
-			"price": 45
+			"price": 45,
+			"alt" : "Bride and groom hugging at their wedding"
 		},
 		{
 			"id": 5234343,
@@ -389,7 +425,8 @@
 			"video": "Animals_Wild_Horses_in_the_mountains.mp4",
 			"likes": 142,
 			"date": "2019-08-23",
-			"price": 60
+			"price": 60,
+			"alt" : "Wild horses galloping in the mountains"
 		  },
 		{
 			"id": 95234343,
@@ -398,7 +435,8 @@
 			"image": "Animals_Rainbow.webp",
 			"likes": 59,
 			"date": "2019-07-02",
-			"price": 60
+			"price": 60,
+			"alt" : "Rainbow bird perched on a branch"
 		},
 
 		{
@@ -408,7 +446,8 @@
 			"image": "Travel_Tower.webp",
 			"likes": 25,
 			"date": "2019-04-03",
-			"price": 60
+			"price": 60,
+			"alt" : "Two women wearing traditional clothes in front of the japanese towers in kyoto"
 		},
 		{
 			"id": 2523434,
@@ -417,7 +456,8 @@
 			"image": "Travel_SunsetonCanals.webp",
 			"likes": 53,
 			"date": "2019-05-06",
-			"price": 60
+			"price": 60,
+			"alt" : "Great view of Venice canal with pink sky"
 		},
 		{
 			"id": 95293534,
@@ -426,7 +466,8 @@
 			"image": "Travel_OpenMountain.webp",
 			"likes": 33,
 			"date": "2019-05-12",
-			"price": 60
+			"price": 60,
+			"alt" : "View of a lake surrounded by trees and overlooked by a mountain"
 		},
 		{
 			"id": 356234343,
@@ -435,7 +476,8 @@
 			"image": "Travel_Bike_and_Stair.webp",
 			"likes": 53,
 			"date": "2019-06-20",
-			"price": 60
+			"price": 60,
+			"alt" : "City bike placed in front of a staircase in the heart of Paris"
 		},
 		{
 			"id": 235234343,
@@ -444,7 +486,8 @@
 			"image": "Travel_Adventure_Door.webp",
 			"likes": 63,
 			"date": "2019-06-26",
-			"price": 60
+			"price": 60,
+			"alt" : "View of the plains from a sublime golden gate in India"
 		},
 		{
 			"id": 6234234343,
@@ -453,7 +496,8 @@
 			"image": "Architecture_Contrast.webp",
 			"likes": 52,
 			"date": "2019-06-30",
-			"price": 60
+			"price": 60,
+			"alt" : "Sublime building with black and gold roof in saint petersburg"
 		},
 		{
 			"id": 6525666253,
@@ -462,7 +506,8 @@
 			"image": "Architecture_On_a_hill.webp",
 			"likes": 63,
 			"date": "2019-07-20",
-			"price": 60
+			"price": 60,
+			"alt" : "Village on a hill in tibet"
 		},
 		{
 			"id": 98252523433,
@@ -471,7 +516,8 @@
 			"image": "Architecture_Dome.webp",
 			"likes": 88,
 			"date": "2020-01-05",
-			"price": 60
+			"price": 60,
+			"alt" : "The leaning tower of Pisa in Italy"
 		},
 		{
 			"id": 9259398453,
@@ -480,7 +526,8 @@
 			"video": "Architecture_coverr_circle_empty_highway_in_buenos_aires_587740985637.mp4",
 			"likes": 57,
 			"date": "2020-01-20",
-			"price": 65
+			"price": 65,
+			"alt" : "Drone shot of Buenos Aires highways"
 		  },
 		{
 			"id": 3523523534,
@@ -489,7 +536,8 @@
 			"image": "Architecture_Corner_Room.webp",
 			"likes": 54,
 			"date": "2020-05-05",
-			"price": 60
+			"price": 60,
+			"alt" : "Corner building with a slate roof overlooked by an azure blue sky"
 		},
 		{
 			"id": 952343423,
@@ -498,7 +546,8 @@
 			"video": "Sport_Tricks_in_the_air.mp4",
 			"likes": 150,
 			"date": "2018-02-30",
-			"price": 70
+			"price": 70,
+			"alt" : "Woman doing aerial tricks suspended by one arm"
 		  },
 		{
 			"id": 235234343,
@@ -507,7 +556,8 @@
 			"image": "Sport_Next_Hold.webp",
 			"likes": 101,
 			"date": "2018-03-05",
-			"price": 65
+			"price": 65,
+			"alt" : "Woman climbing a rocky slope"
 		},
 		{
 			"id": 235343222,
@@ -516,7 +566,8 @@
 			"image": "sport_water_tunnel.webp",
 			"likes": 103,
 			"date": "2018-03-10",
-			"price": 70
+			"price": 70,
+			"alt" : "Surf inside a tube"
 		},
 		{
 			"id": 7775342343,
@@ -525,7 +576,8 @@
 			"image": "Sport_Sky_Cross.webp",
 			"likes": 77,
 			"date": "2018-04-16",
-			"price": 50
+			"price": 50,
+			"alt" : "Skier doing a trick with crossed skis"
 		},
 		{
 			"id": 9253445784,
@@ -534,7 +586,8 @@
 			"image": "Sport_Race_End.webp",
 			"likes": 88,
 			"date": "2018-04-22",
-			"price": 65
+			"price": 65,
+			"alt" : "Women racing in a stadium"
 		},
 		{
 			"id": 22299394,
@@ -543,7 +596,8 @@
 			"image": "Sport_Jump.webp",
 			"likes": 95,
 			"date": "2018-04-27",
-			"price": 70
+			"price": 70,
+			"alt" : "skater doing a shirtless aerial trick"
 		},
 		{
 			"id": 3452342633,
@@ -552,7 +606,8 @@
 			"image": "Architecture_White_Light.webp",
 			"likes": 52,
 			"date": "2018-05-03",
-			"price": 75
+			"price": 75,
+			"alt" : "Low angle view of a white building over a skylight"
 		},
 		{
 			"id": 939234243,
@@ -561,7 +616,8 @@
 			"image": "Architecture_Water_on_Modern.webp",
 			"likes": 55,
 			"date": "2018-05-10",
-			"price": 72
+			"price": 72,
+			"alt" : "Modern building behind water"
 		},
 		{
 			"id": 222959233,
@@ -570,7 +626,8 @@
 			"image": "Architecture_Horseshoe.webp",
 			"likes": 85,
 			"date": "2018-05-15",
-			"price": 71
+			"price": 71,
+			"alt" : "Building drawing a horseshoe in the sky in black and white"
 		},
 		{
 			"id": 965933434,
@@ -579,7 +636,8 @@
 			"image": "Architecture_Cross_Bar.webp",
 			"likes": 66,
 			"date": "2018-05-20",
-			"price": 58
+			"price": 58,
+			"alt" : "Buildings drawing a cross bar in the sky"
 		},
 		{
 			"id": 777723343,
@@ -588,7 +646,8 @@
 			"image": "Architecture_Connected_Curves.webp",
 			"likes": 79,
 			"date": "2018-05-21",
-			"price": 80
+			"price": 80,
+			"alt" : "Building with curves"
 		}
 	]
 }

@@ -10,20 +10,20 @@ export default class PhotographerMedias {
             <section class="gallery">
                 ${this.medias.map(media => {
             const mediaContent = media.image
-                ? ` <img class="gallery_thumbnail" src="./assets/images/photographers/samplePhotos-Small/${this.photographer.name}/${media.image}" alt="${media.title}">`
-                : ` <video class="gallery_thumbnail">
+                ? ` <img class="gallery_thumbnail" src="./assets/images/photographers/samplePhotos-Small/${this.photographer.name}/${media.image}" alt="${media.alt}">`
+                : ` <video class="gallery_thumbnail" aria-label="${media.alt}">
                         <source src="./assets/images/photographers/samplePhotos-Small/${this.photographer.name}/${media.video}" type="video/mp4">
                     </video>`;
             return `
                     <article class="gallery_card">                           
-                        <a href="#" class="lightbox-trigger" data-media=${media.id} role="link" aria-label="Afficher le média en grand">
+                        <a href="#" data-media=${media.id} role="link" aria-label="View media large">
                             <figure>${mediaContent}</figure>
                         </a>
                         <figcaption>
                             <h2>${media.title}</h2>
-                                <div role="group" aria-label="Bouton J'aime et nombre de likes">
+                                <div role="group" aria-label="Like button and number of likes">
                                     <span class="nbLike">${media.likes}</span> 
-                                    <button class="btn_like" type="button" aria-label="J'aime" data-id="${media.id}">
+                                    <button class="btn_like" type="button" aria-label="Like" data-id="${media.id}">
                                         <span class="fas fa-heart" aria-hidden="true"></span>
                                     </button> 
                                 </div>

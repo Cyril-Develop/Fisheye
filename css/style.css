@@ -51,7 +51,7 @@ h1 {
 
 .photographer_name{
     color: var(--color-tertiary);
-    font-size: clamp(2rem, 3.2vw, 3.2rem);
+    font-size: clamp(2.5rem, 3.2vw, 3.2rem);
 }
 
 .photographer_location{
