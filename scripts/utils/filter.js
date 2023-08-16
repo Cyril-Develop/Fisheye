@@ -7,15 +7,16 @@ export const openCloseFilterMenu = () => {
     const filterButtons = document.querySelectorAll(".dropdown_content button");
 
     filterMenuButton.addEventListener("click", () => {
+        const isExpanded = filterMenuButton.getAttribute("aria-expanded") === "true" || false;
+        filterMenuButton.setAttribute("aria-expanded", !isExpanded);
         filterMenu.classList.toggle("curtain_effect");
         document.querySelector(".fa-chevron-up").classList.toggle("rotate");
-        if(filterMenu.classList.contains("curtain_effect")) {
-            filterMenu.setAttribute("aria-hidden", "false");
-            filterButtons.forEach(button => button.setAttribute("tabindex", "0"));
-        } else {
-            filterMenu.setAttribute("aria-hidden", "true");
-            filterButtons.forEach(button => button.setAttribute("tabindex", "-1"));
-        }
+
+        const newAriaHiddenValue = filterMenu.classList.contains("curtain_effect") ? "false" : "true";
+        filterMenu.setAttribute("aria-hidden", newAriaHiddenValue);
+
+        const newTabIndexValue = filterMenu.classList.contains("curtain_effect") ? "0" : "-1";
+        filterButtons.forEach(button => button.setAttribute("tabindex", newTabIndexValue));
     });
 };
 

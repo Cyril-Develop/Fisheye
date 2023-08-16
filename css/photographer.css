@@ -200,7 +200,6 @@ h2{
 
 .dropdown_content li button {
     width: 100%;
-    background-color: transparent;
     text-align: left;
 }
 
@@ -299,7 +298,6 @@ h2{
 .btn_like{
     border-radius: 5px;
     padding: 0 1px;
-    background-color: transparent;
     font-size: clamp(1.8rem, 2vw, 2.2rem);
     color: var(--color-secondary);
 }
@@ -394,7 +392,6 @@ aside{
     border-radius: 5px;
     transform: translateY(-50%);
     padding: 5px;
-    background-color: transparent;
 }
 
 .btn_next{
@@ -427,8 +424,9 @@ aside{
 }
 
 .btn_previous:hover::before,   
-.btn_next:hover::before{
-    color: var(--color-primary);
+.btn_next:hover::before,
+.btn_close_lightbox:hover::before{
+    color: var(--color-secondary);
 }
 
 .invalid{
@@ -442,7 +440,7 @@ aside{
 .btn_next.active::before,
 .btn_previous.active::before,
 .btn_close_lightbox.active::before{
-    color: var(--color-black);
+    color: var(--color-secondary);
 }
 
 /* ANIMATION */
@@ -516,6 +514,7 @@ aside{
     .btn_previous::before,
     .btn_close_lightbox::before{
         color: var(--color-light);
+        -webkit-text-stroke: .5px #000; 
     }
 }
 
