@@ -2,7 +2,10 @@ export const openCloseFormContact = () => {
     const contactBtn = document.querySelector(".btn_cta");
     const contactModal = document.querySelector(".modal_wrapper");
     const closeModal = document.querySelector(".btn_close");
-    contactBtn.addEventListener("click", () => contactModal.style.display = "flex");
+    contactBtn.addEventListener("click", () => {
+        contactModal.style.display = "flex";
+        closeModal.focus();
+    });
     closeModal.addEventListener("click", () => contactModal.style.display = "none");
 };
 
@@ -39,9 +42,11 @@ export const validateForm = () => {
         if(isValid) {
             messageProvider.innerHTML = "";
             messageProvider.removeAttribute("role");
+            input.removeAttribute("aria-invalid");
         } else {
             messageProvider.innerHTML = errorMessage;
             messageProvider.setAttribute("role", "alert")
+            input.setAttribute("aria-invalid", "true");
         }
 
         input.classList.toggle('invalid', !isValid);

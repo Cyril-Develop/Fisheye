@@ -59,10 +59,10 @@
             </section>
         </main>
         <!-- Modal Form -->
-        <div class="modal_wrapper wrapper">
-            <div class="modal_form">
+        <div class="modal_wrapper wrapper" aria-modal="true" role="dialog">
+            <div class="modal_form" aria-describedby="formTitle">
                 <div class="modal_form_title">
-                    <h2>Contactez-moi <button  class="btn_close" type="button" aria-label="Close contact form"></button></h2>
+                    <h2 id="formTitle">Contactez-moi <button  class="btn_close" type="button" aria-label="Close contact form"></button></h2>
                     <p class="modal_form_name"></p>
                 </div> 
                 <form novalidate>
@@ -91,7 +91,7 @@
             </div>
         </div>
         <!-- Lightbox -->
-        <div class="lightbox_wrapper wrapper">
+        <div class="lightbox_wrapper wrapper" aria-modal="true" role="dialog">
             <div class="lightbox" aria-label="Media closeup view">
                 <button class="btn_close_lightbox btn_close" aria-label="Close dialog"></button>
                 <button class="btn_next" aria-label="Next media"></button>

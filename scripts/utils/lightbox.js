@@ -17,6 +17,7 @@ export const displayLightbox = medias => {
             const mediaIndex = mediasList.findIndex(media => media.id == mediaId);
             currentIndex = mediaIndex;
             lightboxWrapper.style.display = 'flex';
+            btnClose.focus();
             lightboxTemplate();
         });
     });
@@ -26,8 +27,8 @@ export const displayLightbox = medias => {
         
         lightboxMedia.innerHTML = `
             ${currentMedia.image ? `
-            <img src="./assets/images/photographers/samplePhotos-Medium/${photographer.name}/${currentMedia.image}" alt="${currentMedia.title}">` : 
-            `<video controls><source src="./assets/images/photographers/samplePhotos-Medium/${photographer.name}/${currentMedia.video}" type="video/mp4"></video>`}
+            <img src="./assets/images/photographers/samplePhotos-Medium/${photographer.name}/${currentMedia.image}" alt="${currentMedia.alt}">` : 
+            `<video controls aria-label="${currentMedia.alt}"><source src="./assets/images/photographers/samplePhotos-Medium/${photographer.name}/${currentMedia.video}" type="video/mp4"></video>`}
 
             <figcaption>${currentMedia.title}</figcaption>
         `;
