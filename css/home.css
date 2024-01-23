@@ -1,18 +1,21 @@
+.page{
+    min-height: 100vh;
+    background-color: var(--color-light-medium);
+}
+
 .main_photographers {
     display: flex;
     justify-content: center;
-    align-items: center;
     flex-wrap: wrap;
     gap: 50px;
-    margin-top: 50px;
+    margin-top: 30px;
 }
 
 .main_photographers article {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
     align-items: center;
-    width: 30%;
+    width: 31%;
 }
 
 .main_photographers article a {
@@ -24,13 +27,17 @@
 }
 
 .photographer_thumbnail{
-    height: clamp(20rem, 18vw, 22rem);
-    width: clamp(20rem, 18vw, 22rem);
+    height: clamp(20rem, 20vw, 30rem);
+    width: clamp(20rem, 20vw, 30rem);
 }
 
 .photographer_name{
     position: relative;
     margin-top: 10px;
+}
+
+.photographer_tagline{
+    text-align: center;
 }
 
 .photographer_name::before{
@@ -58,9 +65,19 @@ article a:focus:not(:hover){
 }
 
 /* RESPONSIVE */
+@media screen and (max-width: 1449px){
+    header{
+        justify-content: center;
+        gap: 50px;
+    }
+}
+
 @media screen and (max-width: 1040px) {
     header{
         flex-direction: column;
+        justify-content: unset;
+        gap: 0;
+        height: 50px;
     }
     .main_photographers article {
         width: 45%;
@@ -72,7 +89,7 @@ article a:focus:not(:hover){
         padding: 0;
     }
     .main_photographers {
-        margin-top: 30px; 
+        margin-top: 40px; 
         gap: 20px;
     }
     .main_photographers article {

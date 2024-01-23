@@ -1,15 +1,14 @@
 .page{
     margin: 0 auto;
-    padding: 30px 20px 20px;
-    max-width: 1400px;
+    max-width: 1800px;
+    padding: 20px 10px;
 } 
 
 header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 120px;
-    height: 50px;
+    height: 120px;
 }
 
 header a{
@@ -24,7 +23,6 @@ header a:focus:not(:hover){
 
 header a::before{
     content: "";
-    z-index: -1;
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
@@ -40,7 +38,7 @@ header a:hover::before{
 }
 
 .logo {
-    width: clamp(13rem, 15vw, 20rem);
+    width: clamp(13rem, 15vw, 25rem);
 }
 
 h1 {
@@ -56,12 +54,12 @@ h1 {
 
 .photographer_location{
     color: var(--color-primary);
-    font-size: clamp(1.8rem, 2vw, 2rem);
+    font-size: clamp(1.8rem, 2.5vw, 2.5rem);
 }
 
-.photographer_tagline, 
-.photographer_price{
-    font-size: clamp(1.5rem, 1.8vw, 1.8rem);
+.photographer_price,
+.photographer_tagline{
+    font-size: clamp(1.6rem, 2.2vw, 2.2rem);
 }
 
 .photographer_thumbnail{
@@ -70,11 +68,9 @@ h1 {
 
 /* UTILITY CLASS */
 .btn{
-    font-size: clamp(1.8rem, 2vw, 2rem);
-    font-weight: bold;
+    font-size: clamp(1.8rem, 2vw, 2.2rem);
     color: var(--color-light);
     padding: 15px;
-    height: 50px;
     background-color: var(--color-primary);
     border-radius: 5px;
 }
@@ -93,8 +89,8 @@ h1 {
 }
 
 /* RESPONSIVE */
- @media screen and (max-width: 445px) {
-    .page{
-        padding: 10px;
+ @media screen and (max-width: 725px) {
+    header{
+        padding: 0;
     }
 }
