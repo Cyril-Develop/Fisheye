@@ -223,7 +223,7 @@ h2{
     position: relative;
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
-    gap: 30px 60px;
+    gap: 30px;
 }
 
 .gallery_card{
@@ -450,16 +450,17 @@ aside{
 /* RESPONSIVE */
 @media screen and (max-width: 1110px) {
     .main_about{
-        justify-content: space-around;
-        padding: 20px;
+        padding: 20px 10px;
     }
 }
 
-@media screen and (max-width: 725px) {
+@media screen and (max-width: 779px) {
     header{
         height: 50px;
     }
+}
 
+@media screen and (max-width: 650px) {
     .main_about{
         justify-content: space-between;
         padding: 10px;

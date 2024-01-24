@@ -6,21 +6,17 @@
     margin-top: 30px;
 }
 
-.main_photographers article {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.main_photographers a {
     width: 31%;
     border-radius: 10px;
-    padding: 10px 0;
+    padding: 20px;
     background-color: var(--color-light-medium);
 }
 
-.main_photographers article a {
+.main_photographers a article {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 5px;
     border-radius: 5px;
 }
 
@@ -50,11 +46,11 @@
     transition: width .2s ease-in-out;
 }
 
-article a:hover .photographer_name::before{
+.main_photographers a:hover .photographer_name::before{
     width: 80%;
 }
 
-article a:focus:not(:hover){
+.main_photographers a:focus:not(:hover){
     outline: 2px solid var(--color-secondary)
 }
 
@@ -66,7 +62,7 @@ article a:focus:not(:hover){
 @media screen and (max-width: 1449px){
     header{
         justify-content: center;
-        gap: 50px;
+        gap: 80px;
     }
 }
 
@@ -75,22 +71,27 @@ article a:focus:not(:hover){
         flex-direction: column;
         justify-content: unset;
         gap: 0;
-        height: 50px;
+        /* height: 50px; */
     }
-    .main_photographers article {
+    .main_photographers {
+        margin-top: 0; 
+        gap: 20px;
+    }
+    .main_photographers a {
         width: 45%;
     }
 }
 
 @media screen and (max-width: 725px) {
     header{
+        height: auto;
         padding: 0;
     }
     .main_photographers {
-        margin-top: 40px; 
+        margin-top: 20px; 
         gap: 20px;
     }
-    .main_photographers article {
+    .main_photographers a {
         width: 100%;
     }
 }
