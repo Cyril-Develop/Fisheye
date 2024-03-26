@@ -2,7 +2,7 @@
 
 # Formation Développeur d'application - JavaScript React
 
-## 📎 Projet 6 : Créez un site accessible pour une plateforme de photographes
+## 📎 Projet 6 : Fisheye - Créez un site accessible pour une plateforme de photographes
 
 ![homepage](./assets/screenshot/home.png)
 
